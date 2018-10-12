@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>National Parks Search</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <form class="parks-search-form">
+      <label for="searchPark">Search for park: </label>
+      <input type="text" name="searchPark" id="search-park-input" required>
+      <label for="maxResults">Maximum results to return</label>
+      <input type="number" name="maxResults" value="10" id="max-results-input">
+      <input type="submit" value="Submit" id="submit-btn">
+    </form>
+
+    <p id="error-message"></p>
+
+    <div class="resultsDiv">
+      <h2>Search results</h2>
+      <ul id="results-list"></ul>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
